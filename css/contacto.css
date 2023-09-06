@@ -1,0 +1,131 @@
+/* Estilos Generales */
+body {
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif;
+    padding: 0;
+    background: -webkit-linear-gradient(bottom, rgb(123, 55, 55), rgb(235, 221, 221));
+}
+
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(146, 144, 144);
+    padding: 20px;
+    transition: background-color 0.4s ease; /* Transición para el color de fondo del encabezado */
+}
+
+.logo img {
+    max-width: 350px; /* Hacer el logo responsive */
+    height: auto;
+    transition: transform 0.5s ease; /* Transición para el efecto de escala al pasar el mouse */
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo Barra de navegación */
+.menu {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-right: 10px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.4s ease;
+}
+
+.menu li:hover {
+    transform: translateY(-4px);
+}
+
+.menu a:hover {
+    color: #6f2020;
+}
+
+/* Reglas de medios para hacer la barra de navegación responsive en dispositivos pequeños */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column; /* Cambia la dirección del menú en pantallas pequeñas */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+
+    .menu li {
+        margin-top: 10px; /* Espacio entre elementos del menú en pantallas pequeñas */
+    }
+}
+
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #6f2020;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #812626;
+}

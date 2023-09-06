@@ -1,0 +1,206 @@
+/* Estilos Generales */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    background: -webkit-linear-gradient(bottom, rgb(123, 55, 55), rgb(235, 221, 221));
+}
+
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(146, 144, 144);
+    padding: 20px;
+    transition: background-color 0.4s ease; /* Transición para el color de fondo del encabezado */
+}
+
+.logo img {
+    max-width: 350px; /* Hacer el logo responsive */
+    height: auto;
+    transition: transform 0.5s ease; /* Transición para el efecto de escala al pasar el mouse */
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo Barra de navegación */
+.menu {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-right: 10px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.4s ease;
+}
+
+.menu li:hover {
+    transform: translateY(-4px);
+}
+
+.menu a:hover {
+    color: #6f2020;
+}
+
+/* Reglas de medios para hacer la barra de navegación responsive en dispositivos pequeños */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column; /* Cambia la dirección del menú en pantallas pequeñas */
+        align-items: center; /* Centra los elementos horizontalmente */
+    }
+
+    .menu li {
+        margin-top: 10px; /* Espacio entre elementos del menú en pantallas pequeñas */
+    }
+}
+
+/* Estilos para las secciones de contenido */
+.contenido {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+    transition: background-color 0.4s ease; /* Transición para el color de fondo del contenido */
+}
+
+.contenido img {
+    max-width: 400px; /* Hacer las imágenes responsive */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.4s ease; /* Transición para el efecto de escala al pasar el mouse */
+}
+
+.contenido img:hover {
+    transform: scale(1.08);
+}
+
+.contenido h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contenido p {
+    font-size: 16px;
+    font-weight: bold;
+    justify-content: center;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: rgb(146, 144, 144);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Agrega estos estilos para las imágenes al lado de h2 y p */
+.contenido-columnas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Espacio entre las secciones */
+}
+
+.contenido-columnas img {
+    max-width: 200px; /* Tamaño máximo de las imágenes */
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    transition: transform 0.4s ease; /* Transición para el efecto de escala al pasar el mouse */
+}
+
+.contenido-columnas img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para el footer */
+.footer-logo img {
+    max-width: 100px; /* Hacer el logo responsive en el footer */
+    height: auto;
+    margin-bottom: 20px; /* Espacio entre el logo y el texto */
+}
+
+footer p {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+/* Estilos para el enlace "El Primo" */
+footer a {
+    color: #6f2020; /* Cambia el color del enlace según tus preferencias */
+    text-decoration: none;
+    font-weight: bold;
+    transition: text-decoration 0.4s ease; /* Transición para la decoración de enlace al pasar el mouse */
+}
+
+/* Estilos para el enlace "El Primo" al pasar el mouse */
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Reglas de medios para hacer el sitio responsive */
+@media (max-width: 768px) {
+    .logo img {
+        width: 250px; /* Ajusta el tamaño del logo para pantallas pequeñas */
+    }
+
+    .menu {
+        flex-direction: column; /* Cambia la dirección del menú en pantallas pequeñas */
+    }
+
+    .menu li {
+        margin-top: 10px;
+    }
+
+    .contenido {
+        margin: 10px;
+    }
+
+    .contenido img {
+        max-width: 350px; /* Ajusta el ancho de las imágenes en pantallas pequeñas */
+        margin: 0 auto; /* Centra las imágenes horizontalmente */
+    }
+
+    /* Añade estilos para colocar Misión y Visión en columnas */
+    .contenido-columnas {
+        flex-direction: column; /* Cambia la dirección a columna en pantallas pequeñas */
+        align-items: center; /* Centra horizontalmente los elementos */
+    }
+    
+    .contenido-columnas img {
+        max-width: 100%; /* Ajusta el ancho de las imágenes en pantallas pequeñas */
+        margin-right: 0; /* Elimina el espacio entre la imagen y el texto */
+    }
+}
